@@ -5,7 +5,7 @@
     </head>
     <body>
         <button name = 'Report a bug' onclick="submit()">Submit</button>
-        <script>
+        <script defer>
             function submit() {
                 // Create a playerData object to send data about the player
                 let player = new playerData('Title','example@gmail.com','Handle');
@@ -13,6 +13,6 @@
                 createReport('Report Title','bug',player);
             }
         </script>
-        <script src = 'PlayerLoopAPI.js'></script>
+        <script src = 'PlayerLoopAPI.js' defer></script>
     </body>
 </html>
