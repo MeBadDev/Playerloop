@@ -44,4 +44,3 @@ function createReport(content,reportType,player) {
     request.setRequestHeader('Authorization',' Bearer ' + APIKey)
     request.send(JSON.stringify(data));
 }
-init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbklkIjo4MTIzMTgwOX0.MSi7D2rni-FQgyByA2Ek1fYPqzj2oKGeD05LuhTTP08')
