@@ -9,12 +9,10 @@ function init(key) {
 // the basic data of players
 // you can feed this into createReport()
 class playerData {
-	constructor (id,email = '',handle = 'Player',firstName = 'firstname',lastName = 'lastname') {
+	constructor (id,email = '',handle = 'Player') {
         this.id = id
         this.email = email
         this.handle = handle
-        this.firstName = firstName
-        this.lastName = lastName
 	}
     toDictionary() {
         var data = {
