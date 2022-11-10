@@ -8,11 +8,12 @@
         <script src = 'https://mebaddev.github.io/Playerloop/PlayerLoopAPI.js' defer ></script>
         <script defer>
             function submit() {
+                // Your project key
                 init('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbklkIjo4MTIzMTgwOX0.MSi7D2rni-FQgyByA2Ek1fYPqzj2oKGeD05LuhTTP08')
                 // Create a playerData object to send data about the player
-                let player = new playerData('Title','example@gmail.com','Handle','Player Name');
+                let player = new playerData('Player ID','example@gmail.com','Handle','Player Name');
                 // Create a Report With title 'report title' and type 'bug'
-                createReport('Report Title','bug',player);
+                createReport('Example Report','bug',player);
             };
         </script>
     </body>
