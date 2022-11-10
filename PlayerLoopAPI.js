@@ -19,7 +19,7 @@ class playerData {
             'id':this.id,
             'email':this.email,
             'handle':this.handle,
-            'fullname':this.fullname,
+            'full_name':this.fullname,
         }
         
         return data
