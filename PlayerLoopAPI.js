@@ -1,12 +1,12 @@
 const postURL = 'https://api.playerloop.io/reports';
 let APIKey = '';
 
-export function init(key) {
+function init(key) {
     APIKey = key;
 }
 // the basic data of players
 // you can feed this into createReport()
-export class playerData {
+class playerData {
 	constructor (id,email = '',handle = '',fullname = '') {
         this.id = id
         this.email = email
@@ -25,7 +25,7 @@ export class playerData {
     };
 };
 
-export function createReport(content,reportType,player) {
+function createReport(content,reportType,player) {
     let request = new XMLHttpRequest();
     request.open("POST", postURL);
     let data = {
@@ -42,6 +42,10 @@ export function createReport(content,reportType,player) {
     console.log(request.responseText);
 }
 
-export function openPrivacyPolicy() {
+function openPrivacyPolicy() {
     window.open('https://playerloop.io/privacy-policy');
 }
+function ready() {
+    console.log('ready!!')
+}
+export {openPrivacyPolicy,createReport,playerData,init,ready}
