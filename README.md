@@ -5,9 +5,11 @@ Go to https://app.playerloop.io to register an account.
 ## How do i use this?
 
 First you need project key, you must create a PlayerLoop account in order to get it
+Than include this in your website:
 ```html
 <script src = 'https://mebaddev.github.io/Playerloop/PlayerLoopAPI.js' defer></script>
 ```
+Now you can send report with codes below :D
 ```javascript
 // First you must initalize it with your key
 init('My Key')
