@@ -41,3 +41,7 @@ function createReport(content,reportType,player) {
     request.send(JSON.stringify(data));
     console.log(request.responseText)
 }
+
+function openPrivacyPolicy() {
+    window.open('https://playerloop.io/privacy-policy')
+}
