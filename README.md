@@ -20,4 +20,4 @@ let data = new playerData('Player ID','example@gmail.com','Player Handle','Playe
 // 'bug' at the middle is report type. it could only be one of 
 createReport('Report Title','bug',data);
 ```
-IMPORTANT: Your **MUST** make sure your user accept Playerloop's Privacy Policy before sending there data.
+IMPORTANT: Your **MUST** make sure your user accept Playerloop's [Privacy Policy](https://playerloop.io/privacy-policy) before sending there data.
