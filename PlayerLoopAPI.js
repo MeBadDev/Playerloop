@@ -1,8 +1,7 @@
 const postURL = 'https://api.playerloop.io/reports'
 let APIKey = '';
 
-
-
+console.log('plugin logged!')
 function init(key) {
     APIKey = key;
 }
