@@ -7,7 +7,7 @@ function init(key) {
 // the basic data of players
 // you can feed this into createReport()
 class playerData {
-	constructor (id,email = '',handle = 'Player',fullname = '') {
+	constructor (id,email = '',handle = '',fullname = '') {
         this.id = id
         this.email = email
         this.handle = handle
