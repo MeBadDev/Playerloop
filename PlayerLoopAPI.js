@@ -1,4 +1,4 @@
-const postURL = 'https://api.playerloop.io/reports'
+const postURL = 'https://api.playerloop.io/reports';
 let APIKey = '';
 
 function init(key) {
@@ -21,9 +21,9 @@ class playerData {
             'full_name':this.fullname,
         }
         
-        return data
-    }
-}
+        return data;
+    };
+};
 
 function createReport(content,reportType,player) {
     let request = new XMLHttpRequest();
@@ -35,13 +35,13 @@ function createReport(content,reportType,player) {
         "client":"javascript",
         'player':player.toDictionary()
     };
-    console.log(data['player'])
-    request.setRequestHeader('Content-Type','application/json')
-    request.setRequestHeader('Authorization',' Bearer ' + APIKey)
+    console.log(data['player']);
+    request.setRequestHeader('Content-Type','application/json');
+    request.setRequestHeader('Authorization',' Bearer ' + APIKey);
     request.send(JSON.stringify(data));
-    console.log(request.responseText)
+    console.log(request.responseText);
 }
 
 function openPrivacyPolicy() {
-    window.open('https://playerloop.io/privacy-policy')
+    window.open('https://playerloop.io/privacy-policy');
 }
