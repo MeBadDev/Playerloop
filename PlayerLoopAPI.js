@@ -1,7 +1,6 @@
 const postURL = 'https://api.playerloop.io/reports'
 let APIKey = '';
 
-console.log('plugin logged!')
 function init(key) {
     APIKey = key;
 }
@@ -37,8 +36,8 @@ function createReport(content,reportType,player) {
         'player':player.toDictionary()
     };
     console.log(data['player'])
-    console.log(data)
     request.setRequestHeader('Content-Type','application/json')
     request.setRequestHeader('Authorization',' Bearer ' + APIKey)
     request.send(JSON.stringify(data));
+    console.log(request.responseText)
 }
