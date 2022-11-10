@@ -15,6 +15,7 @@ Now you can send report with codes below :D
 init('My Key')
 // To send a report you create a playerData object
 // Give it Player ID, Player's email, Player's Handle
+// Note: Only Player ID is nesessary, you can leave others blank
 let data = new playerData('Player ID','example@gmail.com','Player Handle','Player name');
 // 'bug' at the middle is report type. it could only be one of 
 createReport('Report Title','bug',data);
