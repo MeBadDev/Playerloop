@@ -8,19 +8,18 @@ function init(key) {
 // the basic data of players
 // you can feed this into createReport()
 class playerData {
-	constructor (id,email = '',handle = 'Player') {
+	constructor (id,email = '',handle = 'Player',fullname = '') {
         this.id = id
         this.email = email
         this.handle = handle
+        this.fullname = fullname
 	}
     toDictionary() {
         var data = {
             'id':this.id,
             'email':this.email,
             'handle':this.handle,
-            // NOT WORKING: this might be a API bug
-            // 'first_name':this.firstName,
-            // 'last_name':this.lastName
+            'fullname':this.fullname,
         }
         
         return data
