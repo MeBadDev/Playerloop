@@ -35,17 +35,11 @@ function createReport(content,reportType,player) {
         "client":"javascript",
         'player':player.toDictionary()
     };
-    console.log(data['player']);
     request.setRequestHeader('Content-Type','application/json');
     request.setRequestHeader('Authorization',' Bearer ' + APIKey);
     request.send(JSON.stringify(data));
-    console.log(request.responseText);
 }
 
 function openPrivacyPolicy() {
     window.open('https://playerloop.io/privacy-policy');
 }
-function ready() {
-    console.log('ready!!')
-}
-
